@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdados</title>
+</head>
+<body>
+    <!-- Exemplo SEM microdados -->
+    <div>
+        <p> 
+         Meu nome é James Bond, mas todos me cham de Bond. <br>
+         Este é o meu site: <a href="#">james.com</a> <br>
+         Moro em Londres, Inglaterra, e trabalho como detetive secreto.  
+        </p>
+    </div>
+
+
+    <!-- Exemplo com microdados -->
+    <div itemscope itemtype="htttp://data-vocabulary.org/Person">
+        Meu nome é <span itemprop="name">James Bond</span> <br>
+        Mas todos me chamam de <span itemprop="nickname">Bond</span> <br>
+        Esta é a minha página inicial: <a href="#">james.com</a> <br>
+        Moro em Londres, Inglaterra, e trabalho <span itemprop="title">detetive secreto</span> na 
+        <span itemprop="affiliation">ACME Corp.</span>
+    </div> 
+    
+</body>
+</html>

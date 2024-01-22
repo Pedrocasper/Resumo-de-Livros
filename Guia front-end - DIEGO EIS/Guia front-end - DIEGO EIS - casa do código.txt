@@ -1,0 +1,102 @@
+--- CAP 1 e CAP 2 ---
+ Tudo começa com um bom HTML sendo ele bem estruturado e semantico para que o site tenha um bom desempenho em 
+ resultados de busca, pois se não haver uma boa estrutura e semantica a acessibilidade ficará prejudicada, a manutenção
+ será danificada com o tempo, não haverá portabilidade e terá problemas com um codigo legado. 
+ 
+ Seguir a ideia de estruturar o HTML de forma relacional e associativa, criará o mesmo estilos de enciclopédias
+ te levando a várias informações de um assunto central. a mente funciona de forma não linear de organizar as informações
+ e sim trabalha com pequenos "atalhos" para associar a um assunto central, desta forma se consegue acessar o sub conciente
+ de forma mais rapida. Exemplo: falar sobre carros como assuno central, mas se sabe que o carro tem temas satélites como
+ motor, roda, pintura e etc. Criar um HTMl bem estruturado é trazer o tema central mas com assuntos satélites assim
+ fará com que os resultados de busca para acessar seu site aumentará. 
+ 
+ Para uma melhor implementação da ideia acima temos dois exemplos para MICRODADOS
+ sem microdados: 
+ <div>
+        <p> 
+         Meu nome é James Bond, mas todos me cham de Bond. <br>
+         Este é o meu site: <a href="#">james.com</a> <br>
+         Moro em Londres, Inglaterra, e trabalho como detetive secreto.  
+        </p>
+ </div>
+ 
+ COM MICRODADOS:
+ <div itemscope itemtype="htttp://data-vocabulary.org/Person">
+        Meu nome é <span itemprop="name">James Bond</span> <br>
+        Mas todos me chamam de <span itemprop="nickname">Bond</span> <br>
+        Esta é a minha página inicial: <a href="#">james.com</a> <br>
+        Moro em Londres, Inglaterra, e trabalho <span itemprop="title">detetive secreto</span> na 
+        <span itemprop="affiliation">ACME Corp.</span>
+ </div>
+ 
+ Nota que temos uma especificação mais a funda sobre os dados contidos nos trechos acima, identificando o nome do agente
+ seu cargo e empresa, isso faz com que os brownser tem uma facilidade maior em encontrar este site e recomendar. 
+ 
+ 
+ 
+--- CAP 3 ---
+ Falando um pouco sobre css sua principal caracteristica é a possibilidade de herança de estilos em cascata dos elementos.
+ Existe 3 pilares importantes: informação, formatação e comportamento.
+ 
+ INFORMAÇÃO: camada normalmente controlada pelo HTML, exibe e dá significado à informação que o usuário consome. é nela 
+ que você marca oque é um título, um parágrafo e etc.
+ 
+ FORMATAÇÃO: normalmente controlado pelo CSS, é nela que você controla como a informação será formatada, transformando o 
+ layout feito pelo designer em código.
+ 
+ COMPORTAMENTO: era controlada pelo javascript, mas agora o CSS tem um responsabilidade neste terreno. neta camada é onde
+ controlamos qual será o comportamento da informação.
+ 
+ 
+ PROGRESSIVE ENHANCEMENT E FAULT TOLERANCE
+ *Faul tolerance:  é como as máquinas tratam um erro quando ele acontece. É habilidade do sistema de continuar operando 
+ quando uma falaha inesperada ocorre.
+ 
+ Progressive enhancement é tudo sobre acessibilidade, tratando tudo na mesma õtica de que todo mundo necessidades especiais
+ e por isso o acesso deveria ser facilitado para qualquer pessoa em qualquer tipo de contexto.
+ Porem como método e alguns níveis o objetivo é sempre servir primeiro o conteúdo e depois todas as funcionalidades e comportamentos;
+ 
+ pimeira camada: 
+ é uma base para tolerar erros e sempre manter um fallback ou seja, caso uma imagem, vídeo ou outro elemento não seja exibido
+ temos por exemplo o termo ALT, que descreve o conteúdo, isso se trata de um fallback.
+
+ segunda camada:
+ se trata da semanatica no HTML, cada elemento em sua função e significado, é importante que estejam bem descritos;
+
+ terceira camada: 
+ aqui vem toda parte visual, ou seja, o CSS, aqui se percebe mais a tolerância dos browsers a falhas.
+ 
+ quarta camada:
+ nesta parte o Javascript toma conta realizando a interatividade ou comportamento. O Javascript controlando os elementos do HTML
+ e muitas vezes controlando propriedades do CSS de acordo com interação do usuário;
+ 
+ quinta camada:
+ é uma extensão da semantica dos elementos HTML, é onde vamos guiar leitores de telas e outros meios de acesso para elementos
+ e pontos importantes na estrutura do layout;
+ 
+ 
+ ORGANIZANDO OS ARQUIVOS
+ o ideial é que estrure os arquivos de css por parte do site, mas depende do tamanho do projeto
+ EXEMPLO:  projeto de site institucional, pode se ter um arquivo para o header, ou para sidebar, footer tratando o site por parte
+ e criando os aquivos respectivos. 
+ já em projetos grandes pode se ser mais minuciósos, tratando, a tipografria, botões, interações, pois desta forma se for preciso 
+ combinar arquivos em uma pagina HTML será mais fácil a manutenção.
+ 
+ 
+ PASTAS 
+ é algo com gosto pessoal, mas começar por assets e dentro dela conter o js e css em pastas separadas e imagem.
+ 
+ ORGANIZANDO O CÓDIGO
+ se trabalha em equipe o ideal é que este código pareça que foi escrito por uma pessoa, essa é uma regra de ouro.
+ 
+ 
+ 
+ CSSOM 
+ tão quanto importante como o DOM HTML 
+ entende-se que o browser monta a arvore do CSSOM conforme vai lendo as tags HTML e buscando as informações no css
+ 
+ CSS 3D
+ vai alem da estilização da página mostra que é possível modelar objetos em diferentes angulos fazendo se tornar 3d
+ MAS VALE RESSALTAR QUE É IMPORTANTE SABER DOZAR, pois o execesso pode trazer perca de tempo e a paciência do usuário.
+ 
+ 
