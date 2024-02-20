@@ -1,0 +1,78 @@
+CAP 7.1
+-- Adaptative Web design
+
+compõe: 
+    1- Ubiquidade 
+    2- Flexibilidade
+    3- Performance
+    4- Enhancement
+    5- Future-Friendly
+
+
+--- Mobile firts
+é um termo que te como conceito 
+o desenvolvimento web focado primeiro em telas pequenas e posteriomente 
+em telas maiores, quando se pensa primeiro em telas pequenas, você precisa
+se preocupar com uma série de restrições, performance, fluxo de navegação,
+quantidade de textos, agrupamento informação e adaptação dos componentes. 
+
+- se o fluxo de informações é longo , busque diminuir.
+
+
+--- Responsividade Web Design
+Acima de tudo é um conceito de nos responsabilizamos por apresentar a informação 
+de forma acessível e confortável para diversos meios de acesso. 
+
+Um primeiro passo para que os browsers formatem de maneira mais eficiente nossos 
+layouts, fazendo com que renderize um bloco de CSS de acordo com a caracteristicas
+do dispositivos, utilizando MEDIA TYPES E MEDIA QUERIES.
+Segundo passo entender que o layout precisa ser amigável, mas para isso é preciso
+entender os seguintes passos.
+1-Grid fluido
+2-Imagem Flexíveis
+3-Media Queries
+
+
+
+--- MEDIA QUERIES
+Primeiro é preciso entender sobre MEDIA TYPES, um exemplo é quando o usuário quer 
+imprimir uma página de um portal como UOL, não será legal ele imprimir o navbar 
+sider, sendo que oque é importante é o artigo, então é necessário formatar utilizando 
+MEDIA TYPES. 
+
+sua aplicação pode ser feita da seguinte forma:
+<link rel="stylesheet" href="estilo.css" media="handheld">
+
+este é um exemplo que estou chamando o arquivo css para ser usado em dispositivos móveis
+celulares, ou aparelhos com telas pequenas, LOGO VALE RESSALTAR QUE ESTE css NÃO SERÁ
+UTILIZADO EM TELAS COMO DESKTOPS.
+
+<link rel="stylesheet" href="estilo.css" media="screen">
+
+Nota que temos um problema quando direcionamos o tipo de media para um determinado dispositivo
+desta forma não criamos a compatibildiade completa, mas a solução é utilizar MEDIA QUERIES
+
+MEDIA QUERIES
+ela define as condições para que o CSS seja utilizado em cenário específicos.
+
+<link rel="stylesheet" href="estilo.css" media="screen and (max-width:480px)">
+
+Foi específicado no cenário acima que será utilizado o arquivo css quando se enquadra na 
+condição SCREEN
+
+
+Geralamento se coloca o link desta forma 
+<link rel="stylesheet" href="estilo.css">
+
+Aplicando dentro do aquivo CSS as condições que devem ser aplicadas a cada tamanho de tela
+
+a {color:green}
+
+@media (min-width: 768px) {
+ a {color: blue}
+}
+
+@media (min-width: 768px) {
+ a {color: yellow}
+}
+
