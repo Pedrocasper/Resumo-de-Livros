@@ -1,0 +1,34 @@
+---- DIMENSÕES ----
+
+
+se tratando sobre dimensões o melhor sempre é utilizar o forma EM
+onde se pode utilizar na tag PAI a dimensão total e depois adaptar 
+dentro das tags filhas como:
+
+div {
+font: 30px verdadna }
+
+h1 {
+font-size: 20px }
+
+p {
+font-size: 12px }
+
+ao invez de utilizar PX se utiliza desta forma 
+
+body {
+font: 100% verdadna }
+
+div {
+font-size: 1.88em }
+
+h1 {
+font-size: 0.67em }
+
+p {
+font-size: 0.4em }
+
+
+primeiro parágrafo: 12px (target) / 30px (context [div]) = 0.4em
+titulo: 20px (target) / 30px (context [div]) = 0.67em
+div: 30px (target) / 16px (context [body]) = 1.88em
