@@ -100,3 +100,25 @@
  MAS VALE RESSALTAR QUE É IMPORTANTE SABER DOZAR, pois o execesso pode trazer perca de tempo e a paciência do usuário.
  
  
+ SOBRE O USO DE FRAMEWORKS
+ existe pontos de vantagens e desvantagens em seu uso, caso seu projeto tenha diversas telas com um padrão a ser seguido 
+ ideal é que se crie um framework para ter os seguintes ganhos: 
+ PROTOTIPAÇÃO: poderá pedir ao seu clinete para testar e passar um pequeno feedback da interface mesmo que ele esteja
+ interagindo com algo fake.
+ 
+ PADRONIZAÇÃO, PRODUTIVIDADE e MANUTENÇÃO: alem de padronizar diversas pagínas com o mesmo layout, irá ganhar tempo 
+ de produção e príncipalmente na manutenção seja de front ou back-end, pois realizando uma documentação clara, evita 
+ que ambas equipes possa perder valioso tempo com consultas a outras equipes.
+ 
+ DESVANTAGENS:
+ claro se no projeto tiver vários layouts diferentes isso faz com que o framework se torne improdutivos, pois não se há um 
+ padrão no projeto como um todo, alem de furar o prazo determina do ao inicio de projeto. 
+ Utilizar pequenos fragmentos de frameworks que já exista no mercado para produção do projeto é recomendado desde que 
+ atenda as necessidades da especificação do projeto.
+ 
+ 
+ STYLE GUIDES:
+ São de extrema importancia pois deles vem toda informação de prototipação, tipografia, grid, cores, dimensões e medidas
+ de cada elemento. Pois caso seja realizado de uma forma inadequada irá com certeza garantir que o projeto terá uma aparencia
+ inacabada, cabe equipe de designers e UX deixar de forma clara aquilo que foi combinado com o cliente dentro do wireframes.
+ 
